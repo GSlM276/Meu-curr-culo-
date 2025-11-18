@@ -1,0 +1,140 @@
+/* ======== CONFIGURAÇÕES GERAIS ======== */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* ======== TOPO / MENU ======== */
+.indice {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    border: 2px solid #110247;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+    background-color: #ffffff;
+    padding: 15px 20px;
+
+    /* Se quiser texto escuro */
+    color: #110247; 
+}
+
+/* Menu alinhado à direita */
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+.indice li {
+    color: #110247;
+    text-decoration: none;
+    font-weight: 500;
+
+    border: 2px solid black;
+    padding: 6px 12px;
+    border-radius: 30px;
+
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.indice li:hover {
+    background-color: #110247;
+    color: #ffffff;
+    transform: scale(1.08);
+}
+
+
+
+/* ======== SESSÃO SOBRE ======== */
+.about {
+    border: 3px solid black;
+    padding: 30px;
+
+    font-size: 24px;
+
+    width: 950px;
+    height: 130px;
+
+    margin: 40px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+
+
+/* ======== PROJETOS (cards) ======== */
+/* ======== PROJETOS / CARDS ======== */
+.Projetos {
+    display: flex;
+    gap: 60px;               /* Maior espaço entre os cards */
+    justify-content: center;
+    align-items: flex-start; /* evita desalinhamento vertical */
+    flex-wrap: wrap;         /* quebra em telas menores */
+    margin-top: 40px;
+}
+
+.pro {
+    display: flex;
+    flex-direction: column;  /* imagem em cima, botão embaixo */
+    align-items: center;
+    gap: 12px;               /* espaço imagem ↔ botão */
+}
+
+.img {
+    border: 2px solid black;
+    width: 260px;            /* tamanho melhor proporcional */
+    height: 150px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Botão dos projetos */
+.pro button {
+    border: 2px solid blue;
+    border-radius: 30px;
+    padding: 10px 22px;
+    background-color: rgb(255, 139, 135);
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 15px;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pro button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+/* ======== BLOCOS .hb COM PARÁGRAFOS EM LINHA ======== */
+.hb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hb p {
+    border: 2px solid rebeccapurple;
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
