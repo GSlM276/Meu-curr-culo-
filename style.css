@@ -1,27 +1,60 @@
 /* ======== CONFIGURAÇÕES GERAIS ======== */
 body {
-    background-color: #ffffff;
+    background-color: #0d0d0f;
     margin: 0;
     text-align: center;
     font-family: Arial, sans-serif;
+    color: #e4e4e4;
 }
 
+/* === Currículo e LinkedIn === */
+.culo {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
 
+.curri a {
+    border: 1px solid #6a5acd;
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #1a1a22, #2a2a38);
+    color: #e4e4e4;
+    transition: 0.3s ease;
+}
+
+.curri a:hover {
+    background: #6a5acd;
+    color: #fff;
+    box-shadow: 0 0 12px #6a5acd;
+}
+
+p {
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 10px auto;
+    background: #1a1a22;
+    color: #ffffff;
+
+}
+p:hover {
+    background: #6a5acd;
+    color: #fff;
+    box-shadow: 0 0 12px #6a5acd;
+    transform: scale(1.1);
+    
+}
 
 /* ======== TOPO / MENU ======== */
 .indice {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-
-    border: 2px solid #110247;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-
-    background-color: #ffffff;
-    padding: 15px 20px;
-
-    /* Se quiser texto escuro */
-    color: #110247; 
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: #111118;
+    padding: 15px;
+    box-shadow: 0 0 12px rgba(0, 217, 255, 0.1);
 }
 
 /* Menu alinhado à direita */
@@ -34,30 +67,26 @@ body {
     margin-left: auto;
 }
 
-.indice li {
-    color: #110247;
-    text-decoration: none;
-    font-weight: 500;
-
-    border: 2px solid black;
-    padding: 6px 12px;
-    border-radius: 30px;
-
+.menu li {
+    color: #00d9ff;
+    padding: 8px 16px;
+    border-radius: 25px;
     cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    transition: 0.25s ease;
+    border: 1px solid rgba(0, 217, 255, 0.3);
 }
 
-.indice li:hover {
-    background-color: #110247;
-    color: #ffffff;
-    transform: scale(1.08);
+.menu li:hover {
+    background: #00d9ff;
+    color: #0d0d0f;
+    transform: scale(1.1);
+    box-shadow: 0 0 14px #00d9ff;
 }
-
 
 
 /* ======== SESSÃO SOBRE ======== */
 .about {
-    border: 3px solid black;
+    border: 2px solid rgba(255, 255, 255, 0.1);
     padding: 30px;
 
     font-size: 24px;
@@ -72,56 +101,58 @@ body {
     align-items: center;
 
     border-radius: 10px;
+    background: #16161f;
+    box-shadow: 0px 0px 15px rgba(106, 90, 205, 0.2);
 }
 
 
-
-/* ======== PROJETOS (cards) ======== */
 /* ======== PROJETOS / CARDS ======== */
 .Projetos {
     display: flex;
-    gap: 60px;               /* Maior espaço entre os cards */
+    gap: 60px;
     justify-content: center;
-    align-items: flex-start; /* evita desalinhamento vertical */
-    flex-wrap: wrap;         /* quebra em telas menores */
+
+    flex-wrap: wrap;
     margin-top: 40px;
 }
 
 .pro {
     display: flex;
-    flex-direction: column;  /* imagem em cima, botão embaixo */
+    flex-direction: column;
     align-items: center;
-    gap: 12px;               /* espaço imagem ↔ botão */
+    gap: 12px;
 }
 
 .img {
-    border: 2px solid black;
-    width: 260px;            /* tamanho melhor proporcional */
+    border: 2px solid #6a5acd;
+    width: 260px;
     height: 150px;
     border-radius: 12px;
     object-fit: cover;
+    box-shadow: 0 0 15px rgba(106, 90, 205, 0.25);
 }
 
 /* Botão dos projetos */
 .pro button {
-    border: 2px solid blue;
+    border: 2px solid #00d9ff;
     border-radius: 30px;
     padding: 10px 22px;
-    background-color: rgb(255, 139, 135);
+    background: linear-gradient(135deg, #1a1a22, #232333);
+    color: #e4e4e4;
     cursor: pointer;
 
     font-weight: 600;
     font-size: 15px;
 
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.25s;
 }
 
 .pro button:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+    background: #00d9ff;
+    color: #0d0d0f;
+    box-shadow: 0 0 12px #00d9ff;
 }
-
-
 
 
 /* ======== BLOCOS .hb COM PARÁGRAFOS EM LINHA ======== */
@@ -133,8 +164,11 @@ body {
 }
 
 .hb p {
-    border: 2px solid rebeccapurple;
+    border: 2px solid #6a5acd;
     margin: 0;
     padding: 5px 10px;
     border-radius: 6px;
+    background: #1c1c26;
+    color: #dcdcff;
+    box-shadow: 0 0 8px rgba(106, 90, 205, 0.3);
 }
