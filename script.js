@@ -1,4 +1,4 @@
-window.alert('pagina em desenvimento')
+window.alert('PAGINA EM DESENVOLVIMENTO')
 
 
 function clicar(projeto) {
